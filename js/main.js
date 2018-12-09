@@ -18,7 +18,17 @@ $(document).ready(function(){
           sort: 'created: asc'
         }
       }).done(function(repos){
-        console.log(repos);
+        $.each(repos, function(index, repo){
+          $('#repos').append(`
+            <div class="card">
+              <div class="row">
+                <div class="col-md-7">
+                  <strong>${repo.name}</strong>: ${repo.language}
+                </div>
+              </div>
+            </div>
+          `);
+        });
       });
       $('#profile').html(`
        <div class="card border-primary mb-3" style="max-width: 100rem;">
