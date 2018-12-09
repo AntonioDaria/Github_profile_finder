@@ -19,6 +19,16 @@ $(document).ready(function(){
              <img class="img-thumbnail avatar" src="${user.avatar_url}">
              <a target="_blank" class="btn btn-primary btn-block" href="${user.html_url}">View Profile</a>
            </div>
+           <div class="col-md-9">
+             <br><br>
+             <ul class="list-group">
+               <li class="list-group-item">Company: ${user.company}</li>
+               <li class="list-group-item">Website/blog: <a href="${user.blog}" target="_blank">${user.blog}</a></li>
+               <li class="list-group-item">Location: ${user.location}</li>
+               <li class="list-group-item">Member Since: ${user.created_at}</li>
+             </ul>
+             </div>
+           </div>
          </div>
        </div>
        <h3 class="page-header">Latest Repos</h3>
