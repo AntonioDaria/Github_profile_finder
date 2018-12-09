@@ -25,6 +25,9 @@ $(document).ready(function(){
                 <div class="col-md-7">
                   <strong>${repo.name}</strong>: ${repo.language}
                 </div>
+                <div class="col-md-5">
+                  <a href="${repo.html_url}" target="_blank" class="btn btn-dark">Repo Page</a>
+                </div>
               </div>
             </div>
           `);
